@@ -101,13 +101,15 @@ These two constraints forced separation of the classes in two different groups: 
 <ul>
 <li>Portability – different relational databases</li>
 <li>Reusability – reusability of different groups (layers)</li>
-<li>Adaptability – making the system flexible for future changes
-###Architecturally Significant Design Packages
-Applying the layer architectural patterns created three architecturally significant design packages. 
-The top package (Course Advice System, ooti.caa.model package in the source code) represents the business layer that is consisted of the business classes derived from the use case realization.These classes in Java development world are also known as POJO (Plain Old Java Object) and as Transfer Objects in the Data Access Object architectural pattern. The middle layer (Data Access Object, ooti.caa.dao package in the source code) is consisted of data access object interfaces that can be used for any object-relational mapping framework. The bottom layer (HibernateDAO, ooti.caa.hibdao package in the source code) is actually implementation of the data access layer using the Hibernate Framework. In order to implement the layer architectural pattern few design patterns were added to the model. To enable top layer classes to construct the appropriate number of device objects the abstract factory interface is introduced. Observer and Adapter are also part of the layer architectural pattern but in the Course Advice System model are not necessary because Hibernate framework takes care of the data persistence throw the layers. 
-<img src="https://github.com/janeski/courseadvicesystem/blob/gh-pages/images/diagrams/PatternsApplied.png?raw=true" alt="Class Diagram (Patterns Applied)">
-</li>
+<li>Adaptability – making the system flexible for future changes</li>
 </ul><h3>
+<a name="architecturally-significant-design-packages" class="anchor" href="#architecturally-significant-design-packages"><span class="octicon octicon-link"></span></a>Architecturally Significant Design Packages</h3>
+
+<p>Applying the layer architectural patterns created three architecturally significant design packages. 
+The top package (Course Advice System, ooti.caa.model package in the source code) represents the business layer that is consisted of the business classes derived from the use case realization.These classes in Java development world are also known as POJO (Plain Old Java Object) and as Transfer Objects in the Data Access Object architectural pattern. The middle layer (Data Access Object, ooti.caa.dao package in the source code) is consisted of data access object interfaces that can be used for any object-relational mapping framework. The bottom layer (HibernateDAO, ooti.caa.hibdao package in the source code) is actually implementation of the data access layer using the Hibernate Framework. In order to implement the layer architectural pattern few design patterns were added to the model. To enable top layer classes to construct the appropriate number of device objects the abstract factory interface is introduced. Observer and Adapter are also part of the layer architectural pattern but in the Course Advice System model are not necessary because Hibernate framework takes care of the data persistence throw the layers. 
+<img src="https://github.com/janeski/courseadvicesystem/blob/gh-pages/images/diagrams/PatternsApplied.png?raw=true" alt="Class Diagram (Patterns Applied)"></p>
+
+<h3>
 <a name="contact" class="anchor" href="#contact"><span class="octicon octicon-link"></span></a>Contact</h3>
 
 <p>If you have any questions or comments please do not hesitate to ask me: m.janeski[at]tue.nl</p>
